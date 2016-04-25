@@ -212,7 +212,7 @@
         yestext: "SİL", // string
         notext: "VAZGEÇ", // string
         confirmfunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; } ( run to yestext button clicker )
-        id: 'osm-' + osmrandomcode(20), // string
+        id: 'osm-' + osCodeGenerator(20), // string
         closefunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; }
         openfunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; }
         openbeforefunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; }
@@ -237,7 +237,7 @@
             if (options === undefined) { options = {}; }
             return this.each(function () {
                 if (options.id == undefined) {
-                    options = $.extend({}, options, { id: osmrandomcode(30) });
+                    options = $.extend({}, options, { id: osCodeGenerator(30) });
                 }
                 if (options.openedarea == undefined) {
                     options = $.extend({}, options, { openedarea: 'body' });
@@ -269,7 +269,6 @@ function StringFormat(text, arguments) {
     }
     return text;
 }
-function osmrandomcode(t) { void 0 == t && (t = 10); for (var o = "", n = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", s = 0; t > s; s++) o += n.charAt(Math.floor(Math.random() * n.length)); return o }
 $(function () {
     $('.modaltest').click(function () {
         $(this).osModal({
