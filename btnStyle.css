@@ -1,0 +1,115 @@
+/*#region Buttons Styles [Start] */
+.btn { display: inline-block; padding: 0; border: 0; background: none; }
+.btn .btn-ctn { opacity: 0.90; font-weight: bold; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; display: block; padding: 6px 10px; margin-bottom: 0; font-size: 14px; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; background-color: #fff; -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; border: 4px solid #fff; }
+.btn:hover .btn-ctn { -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); }
+.btn-l { float: left; }
+.btn-r { float: right; }
+.btn-ml-10 { margin-left: 10px; }
+.btn-mr-10 { margin-right: 10px; }
+.btn .btn-ctn span.icon i { font-size: 15px; }
+.btn .btn-ctn span.title { padding: 0 12px; }
+.btn .btn-ctn span.icon { padding-left: 12px; padding-right: 12px; }
+.btn .btn-ctn span.title + span.icon { padding-left: 0; padding-right: 12px; }
+.btn .btn-ctn span.icon.loader { padding-left: 12px; padding-right: 12px; }
+.btn .btn-ctn span.icon + span.title { padding-left: 0; }
+.btn.mini .btn-ctn { padding: 3px 0; }
+.btn.mini .btn-ctn span.icon i { font-size: 14px; }
+.btn.mini .btn-ctn span.title { padding: 0 8px; }
+.btn.mini .btn-ctn span.icon { padding-left: 8px; padding-right: 8px; }
+.btn.mini .btn-ctn span.title + span.icon { padding-right: 8px; }
+.btn.mini .btn-ctn span.icon.loader { padding-left: 8px; padding-right: 8px; }
+.btn.mini2x .btn-ctn { padding: 0; }
+.btn.mini2x .btn-ctn span.icon i { font-size: 13px; }
+.btn.mini2x .btn-ctn span.title { padding: 0 4px; }
+.btn.mini2x .btn-ctn span.icon { padding-left: 4px; padding-right: 4px; }
+.btn.mini2x .btn-ctn span.title + span.icon { padding-right: 4px; }
+.btn.mini2x .btn-ctn span.icon.loader { padding-left: 4px; padding-right: 4px; }
+.btn:hover .btn-ctn,
+.btn:focus .btn-ctn { opacity: 1; }
+.btn-primary .btn-ctn,
+.btn-success .btn-ctn,
+.btn-info .btn-ctn,
+.btn-warning .btn-ctn,
+.btn-danger .btn-ctn,
+.btn-inverse .btn-ctn,
+.btn-purple .btn-ctn,
+.btn-pink .btn-ctn { color: #FFFFFF !important; }
+.btn-default .btn-ctn,
+.btn-default:hover .btn-ctn,
+.btn-default:focus .btn-ctn,
+.btn-default:active .btn-ctn,
+.btn-default.active .btn-ctn,
+.btn-default.focus .btn-ctn { background-color: #fff; }
+.btn-primary .btn-ctn,
+.btn-primary:hover .btn-ctn,
+.btn-primary:focus .btn-ctn,
+.btn-primary:active .btn-ctn,
+.btn-primary.active .btn-ctn,
+.btn-primary.focus .btn-ctn { background-color: #1e88e5; }
+.btn-success .btn-ctn,
+.btn-success:hover .btn-ctn,
+.btn-success:focus .btn-ctn,
+.btn-success:active .btn-ctn,
+.btn-success.active .btn-ctn,
+.btn-success.focus .btn-ctn { background-color: #33b86c; }
+.btn-info .btn-ctn,
+.btn-info:hover .btn-ctn,
+.btn-info:focus .btn-ctn,
+.btn-info:active .btn-ctn,
+.btn-info.active .btn-ctn,
+.btn-info.focus .btn-ctn { background-color: #29b6f6;; }
+.btn-warning .btn-ctn,
+.btn-warning:hover .btn-ctn,
+.btn-warning:focus .btn-ctn,
+.btn-warning:active .btn-ctn,
+.btn-warning.active .btn-ctn,
+.btn-warning.focus .btn-ctn { background-color: #ffd740; color: #333 !important; }
+.btn-danger .btn-ctn,
+.btn-danger:active .btn-ctn,
+.btn-danger:focus .btn-ctn,
+.btn-danger:hover .btn-ctn,
+.btn-danger.active .btn-ctn,
+.btn-danger.focus .btn-ctn { background-color: #ef5350; }
+.btn-inverse .btn-ctn,
+.btn-inverse:hover .btn-ctn,
+.btn-inverse:focus .btn-ctn,
+.btn-inverse:active .btn-ctn,
+.btn-inverse.active .btn-ctn,
+.btn-inverse.focus .btn-ctn { background-color: #212121; color: #FFFFFF; }
+.btn-purple .btn-ctn,
+.btn-purple:hover .btn-ctn,
+.btn-purple:focus .btn-ctn,
+.btn-purple:active .btn-ctn,
+.btn-purple.active .btn-ctn,
+.btn-purple.focus .btn-ctn { background-color: #7e57c2; color: #FFFFFF; }
+.btn-pink .btn-ctn,
+.btn-pink:hover .btn-ctn,
+.btn-pink:focus .btn-ctn,
+.btn-pink:active .btn-ctn,
+.btn-pink.active .btn-ctn,
+.btn-pink.focus .btn-ctn { background-color: #ec407a; color: #FFFFFF; }
+.btn-mm .btn-ctn,
+.btn-mm:hover .btn-ctn,
+.btn-mm:focus .btn-ctn,
+.btn-mm:active .btn-ctn,
+.btn-mm.active .btn-ctn,
+.btn-mm.focus .btn-ctn { background-color: #e7bd8d; color: #4a4a4a; }
+.btn-mm2 .btn-ctn,
+.btn-mm2:hover .btn-ctn,
+.btn-mm2:focus .btn-ctn,
+.btn-mm2:active .btn-ctn,
+.btn-mm2.active .btn-ctn,
+.btn-mm2.focus .btn-ctn { background-color: #ef7d16; color: #FFFFFF; }
+.btn-mm3 .btn-ctn,
+.btn-mm3:hover .btn-ctn,
+.btn-mm3:focus .btn-ctn,
+.btn-mm3:active .btn-ctn,
+.btn-mm3.active .btn-ctn,
+.btn-mm3.focus .btn-ctn { background-color: #fff; color: #FFFFFF; border-color: #00427a; }
+.btn-white .btn-ctn,
+.btn-white:hover .btn-ctn,
+.btn-white:focus .btn-ctn,
+.btn-white:active .btn-ctn,
+.btn-white.active .btn-ctn,
+.btn-white.focus .btn-ctn { background-color: #fff; color: #464646; border-color: #dfb585; }
+/*#endregion Buttons Styles [Finish] */
