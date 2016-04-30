@@ -49,7 +49,7 @@
                     }
                     osmbuttons = '<div class="osm-article-buttons"><div class="osm-buttons-left">' + osmbuttonsleft + '</div><div class="osm-buttons-right">' + osmbuttonsright + confirmbutton + '</div></div>';
                 }
-                var oscheaderclose = '<a href="#" class="osm-h-c-button"><i class="icon-close"></i></a>';
+                var oscheaderclose = '<a href="#" class="osm-h-c-button">' + o.closeicon + '</a>';
                 var osmhtitle = o.title;
                 var osmaddclass = "";
                 var osmaddstyle = "";
@@ -68,9 +68,6 @@
                 } else if (o.width != false & o.responsive == true) {
                     osmwidth = "width: 100%;";
                 }
-
-                
-
                 t.css({ "position": o.position });
                 t.addClass(osmaddclass);
                 var osmelements = '' +
@@ -133,6 +130,8 @@
                         articleload.html(osmloaders);
                         articleload.load(osmcontent);
                     }
+                } else if (o.type == "html") {
+                    articleload.html($('#' + osmcontent).outerHTML());
                 } else {
                     articleload.append(osmcontent);
                 }
@@ -145,8 +144,7 @@
                 if ((Array.isArray(o.addbuttonleft) && o.addbuttonleft.constructor === Array && o.addbuttonleft) || (Array.isArray(o.addbuttonright) && o.addbuttonright.constructor === Array && o.addbuttonright)) { $('[data-osm-function]').click(function () { var t = $(this); var fnc = t.data("osm-function"); var prs = t.data("osm-function-parameters"); t.runFunction(fnc, prs); }); }
                 if (Array.isArray(o.openfunc) && o.openfunc.constructor === Array && o.openfunc) { t.runFunction(o.openfunc[0], o.openfunc[1]); }
                 if (o.bodyoverflow) { $('body').addClass('osModalOverflowBody'); }
-                //articlectnscroll.mCustomScrollbar({ theme: "minimal-dark", set_height: "100%" });
-
+                articlectnscroll.mCustomScrollbar({ theme: "minimal-dark", set_height: "100%" });
                 return true;
             }
         }
@@ -231,6 +229,7 @@
         animatecss: null, // animate.css supported by animatecss (https://daneden.hub.io/gitanimate.css/)
         bodyoverflow: true,
         responsive: false,
+        closeicon: '<i class="icon-close"></i>'
     }
     $.fn.osModal = function (options, opt) {
         if (typeof options === "object") {
@@ -360,3 +359,14 @@ function closefunctest(p1, p2) {
 //    ],
 
 
+$.fn.outerHTML = function () {
+    // IE, Chrome & Safari will comply with the non-standard outerHTML, all others (FF) will have a fall-back for cloning
+    return (!this.length) ? this : (this[0].outerHTML || (
+      function (el) {
+          var div = document.createElement('div');
+          div.appendChild(el.cloneNode(true));
+          var contents = div.innerHTML;
+          div = null;
+          return contents;
+      })(this[0]));
+}
