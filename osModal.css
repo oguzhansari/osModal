@@ -2,17 +2,17 @@
 .osModalOverflowBody { overflow: hidden !important; position: relative; }
 .osModal .osm-box { position: absolute; display: inherit; top: 0; bottom: 0; margin: auto; width: 100%; left: 0; right: 0; }
 .osModal .osm-backclose { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-.osModal .osm-box .osm-container { display: table-caption; margin: 0 auto; width: 50%; border: 1px solid #e0e0e0; box-shadow: 2px 2px 0 #f2f2f2; z-index: 2; position: relative; }
+.osModal .osm-box .osm-container { display: table-caption; margin: 0 auto; width: 50%; border: 1px solid #e0e0e0; box-shadow: 0 0 20px rgba(0, 0, 0, 0.30); z-index: 2; position: relative; }
 .osModal .osm-box .osm-container .osm-header { height: 50px; line-height: 50px; border-bottom: 2px solid #e0e0e0; background: #f9f9f9; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top, #f9f9f9 0%, #f0f0f0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#f0f0f0)); background: -webkit-linear-gradient(top, #f9f9f9 0%,#f0f0f0 100%); background: -o-linear-gradient(top, #f9f9f9 0%,#f0f0f0 100%); background: -ms-linear-gradient(top, #f9f9f9 0%,#f0f0f0 100%); background: linear-gradient(to bottom, #f9f9f9 0%,#f0f0f0 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f0f0f0',GradientType=0 ); }
-.osModal .osm-box .osm-container .osm-article { background-color: #fff; }
+.osModal .osm-box .osm-container .osm-article { padding: 20px; background-color: #fff; }
 .osModal .osm-box .osm-container .osm-article .osm-article-container { display: block; }
 .osModal .osm-box .osm-container .osm-article .osm-article-container img { max-width: 100%; }
-.osModal .osm-box .osm-container .osm-article .osm-article-container-scrolling { display: block; height: 100%; }
+.osModal .osm-box .osm-container .osm-article .osm-article-container-scrolling { display: block; height: 100%; max-height: 500px; }
 .osModal .osm-box .osm-container .osm-header .osm-h-left { float: left; }
 .osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-icon,
 .osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-icon:before { height: 48px; line-height: 48px; width: 48px; text-align: center; font-size: 22px; }
-.osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-icon { float: left; }
-.osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-title { display: block; float: left; height: 48px; line-height: 48px; text-align: center; font-size: 16px; }
+.osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-icon { display: none; float: left; }
+.osModal .osm-box .osm-container .osm-header .osm-h-left .osm-h-title { display: block; float: left; height: 48px; line-height: 48px; text-align: center; font-size: 16px; padding-left: 10px; font-weight: bold; }
 .osModal .osm-box .osm-container .osm-header .osm-h-right { float: right; }
 .osModal .osm-box .osm-container .osm-header .osm-h-right .osm-h-closed,
 .osModal .osm-box .osm-container .osm-header .osm-h-right .osm-h-closed a { font-size: 22px; display: block; height: 47px; line-height: 47px; width: 47px; text-align: center; }
