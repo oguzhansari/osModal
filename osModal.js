@@ -133,7 +133,8 @@ function osCodeGenerator(t) { void 0 == t && (t = 10); for (var o = "", n = "ABC
                         articleload.load(osmcontent);
                     }
                 } else if (o.type == "html") {
-                    articleload.html($('#' + osmcontent).outerHTML());
+                    var htmldiv = $('#' + osmcontent).css({ "display": "block" }).clone();
+                    articleload.html(htmldiv.outerHTML());
                 } else {
                     articleload.append(osmcontent);
                 }
@@ -275,11 +276,12 @@ function StringFormat(text, arguments) {
     }
     return text;
 }
+
 $(function () {
     $('.modaltest').click(function () {
         $(this).osModal({
             title: 'Test modal',
-            content: '/modaltest.html',
+            content: '/modalornek.html',
             type: 'url',
             addbuttonleft: [
                 "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-comment-text-outline\"></i></span><span class=\"title\">Yorumları Oku</span></span></a>",
@@ -290,14 +292,22 @@ $(function () {
                 "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
                 "<a href=\"/\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
             ],
-            openfunc: ["amountcreator", [80, 10, 20, 10]], //amountcreator fonksiyonu vdCounter içerisinde yer alıyor.
+        });
+        return false;
+    });
+
+    $('.htmlelementmodaltest').click(function () {
+        $(this).osModal({
+            title: 'Test modal html ID',
+            content: 'testmodalhtml', // html olarak bir elementi modal da göstermek için ilgili modal ın ID değeri buraya yazılır.
+            type: 'html', // Type değeri html olareak ayarlanmalı
         });
         return false;
     });
     $('.modalcategorytree').click(function () {
         $(this).osModal({
             title: 'Kategori Ağacı',
-            content: '/modalcategorytree.html',
+            content: '/modalornek.html',
             type: 'url',
             addbuttonright: [
                 "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
@@ -337,34 +347,17 @@ $(function () {
     });
 });
 function modalconfirmtestfunc(a, b, c) {
-    alert("please view console");
-    console.log("modalconfirmtestfunc");
-    console.log("parametre a = " + a);
-    console.log("parametre b = " + c);
-    console.log("parametre c = " + b);
+    alert("Confirm True >> please view console");
+    console.log("Confirm True || Parametres 1 = " + a  +", 2 = " + b + ", 3 = " + c);
 }
 function openfunctest() {
-    console.log("openfunctest");
+    alert("Confirm/Modal Open >> please view console");
+    console.log("Confirm/Modal Open Function");
 }
 function closefunctest(p1, p2) {
-    console.log("closefunctest");
-    console.log("parametre 1 = " + p1);
-    console.log("parametre 2 = " + p2);
+    alert("Confirm/Modal Close >> please view console");
+    console.log("Confirm/Modal Close Function // Parametres 1 = " + p1 + ", 2 = " + p2);
 }
-//addbuttonleft: [
-//    "<a href=\"#\" class=\"btn btn-warning\"><span class=\"btn-ctn\"><span class=\"title\">warning</span></span></a>",
-//    "<a href=\"#\" class=\"btn btn-danger\"><span class=\"btn-ctn\"><span class=\"title\">danger</span></span></a>",
-//    "<a href=\"#\" class=\"btn btn-inverse\"><span class=\"btn-ctn\"><span class=\"title\">inverse</span></span></a>",
-//    "<a href=\"#\" class=\"btn btn-purple\"><span class=\"btn-ctn\"><span class=\"title\">purple</span></span></a>",
-//    "<a href=\"#\" class=\"btn btn-pink\"><span class=\"btn-ctn\"><span class=\"title\">pink</span></span></a>"
-//],
-//    addbuttonright: [
-//        "<a href=\"#\" data-osm-function=\"testfunc\" data-osm-function-parameters='[\"asd\",123]' class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"title\">default</span></span></a>",
-//        "<a href=\"#\" class=\"btn btn-primary\"><span class=\"btn-ctn\"><span class=\"title\">primary</span></span></a>",
-//        "<a href=\"#\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"title\">success</span></span></a>",
-//        "<a href=\"#\" class=\"btn btn-info\"><span class=\"btn-ctn\"><span class=\"title\">info</span></span></a>"
-//    ],
-
 
 $.fn.outerHTML = function () {
     // IE, Chrome & Safari will comply with the non-standard outerHTML, all others (FF) will have a fall-back for cloning
