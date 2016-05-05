@@ -133,7 +133,7 @@ function osCodeGenerator(t) { void 0 == t && (t = 10); for (var o = "", n = "ABC
                         articleload.load(osmcontent);
                     }
                 } else if (o.type == "html") {
-                    var htmldiv = $('#' + osmcontent).css({ "display": "block" }).clone();
+                    var htmldiv = $('#' + osmcontent).clone().css({ "display": "block" });
                     articleload.html(htmldiv.outerHTML());
                 } else {
                     articleload.append(osmcontent);
@@ -144,6 +144,7 @@ function osCodeGenerator(t) { void 0 == t && (t = 10); for (var o = "", n = "ABC
                 if (o.autoclose) { setTimeout(function () { t.close(); }, o.autotime); }
                 if (o.okbutton) { okbutton.click(function () { t.close(); return false; }); }
                 if (o.alertconfirm == true) { confirmyes.click(function () { if (Array.isArray(o.confirmfunc) && o.confirmfunc.constructor === Array && o.confirmfunc) { t.runFunction(o.confirmfunc[0], o.confirmfunc[1]); t.close(); } return false; }); confirmno.click(function () { t.close(); return false; }); }
+                if (o.alertconfirm == true) { confirmno.click(function () { if (Array.isArray(o.confirmnonefunc) && o.confirmnonefunc.constructor === Array && o.confirmnonefunc) { t.runFunction(o.confirmnonefunc[0], o.confirmnonefunc[1]); t.close(); } return false; }); confirmno.click(function () { t.close(); return false; }); }
                 if ((Array.isArray(o.addbuttonleft) && o.addbuttonleft.constructor === Array && o.addbuttonleft) || (Array.isArray(o.addbuttonright) && o.addbuttonright.constructor === Array && o.addbuttonright)) { $('[data-osm-function]').click(function () { var t = $(this); var fnc = t.data("osm-function"); var prs = t.data("osm-function-parameters"); t.runFunction(fnc, prs); }); }
                 if (Array.isArray(o.openfunc) && o.openfunc.constructor === Array && o.openfunc) { t.runFunction(o.openfunc[0], o.openfunc[1]); }
                 if (o.bodyoverflow) { $('body').addClass('osModalOverflowBody'); }
@@ -218,6 +219,7 @@ function osCodeGenerator(t) { void 0 == t && (t = 10); for (var o = "", n = "ABC
         yestext: "SİL", // string
         notext: "VAZGEÇ", // string
         confirmfunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; } ( run to yestext button clicker )
+        confirmnonefunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; } ( run to yestext button clicker )
         id: 'osm-' + osCodeGenerator(20), // string
         closefunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; }
         openfunc: null, // example : ["functionname", [parametres]] > function functionname(string, int, bool) { return this; }
@@ -275,88 +277,6 @@ function StringFormat(text, arguments) {
         text = text.replace(regEx, arguments[i]);
     }
     return text;
-}
-
-$(function () {
-    $('.modaltest').click(function () {
-        $(this).osModal({
-            title: 'Test modal',
-            content: '/modalornek.html',
-            type: 'url',
-            addbuttonleft: [
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-comment-text-outline\"></i></span><span class=\"title\">Yorumları Oku</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-primary\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-eye\"></i></span><span class=\"title\">Ayrıntılı İncele</span></span></a>",
-            ],
-            addbuttonright: [
-                "<div class=\"amount\"></div>",
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
-            ],
-        });
-        return false;
-    });
-
-    $('.htmlelementmodaltest').click(function () {
-        $(this).osModal({
-            title: 'Test modal html ID',
-            content: 'testmodalhtml', // html olarak bir elementi modal da göstermek için ilgili modal ın ID değeri buraya yazılır.
-            type: 'html', // Type değeri html olareak ayarlanmalı
-        });
-        return false;
-    });
-    $('.modalcategorytree').click(function () {
-        $(this).osModal({
-            title: 'Kategori Ağacı',
-            content: '/modalornek.html',
-            type: 'url',
-            addbuttonright: [
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
-            ],
-            width: "500px",
-            maxwidth: false,
-        });
-        return false;
-    });
-    $('.modalconfirmtest').click(function () {
-        $(this).osModal({
-            title: 'Onay',
-            content: 'Silmek istediğinize emin misiniz?',
-            type: 'alert',
-            alertconfirm: true,
-            yestext: "Ürünü Sil",
-            notext: "Silmekten Vazgeç",
-            confirmfunc: ["modalconfirmtestfunc", [1, 2, "üç"]],
-            openfunc: ["openfunctest"],
-            closefunc: ["closefunctest", ["parametre1", "parametre2"]],
-            maxwidth: 400,
-        });
-        return false;
-    });
-
-    $('#modalselectizetest').click(function () {
-        var content = $(this).attr('href');
-        content = '"' + content + '"';
-        $(this).osModal({
-            title: 'Selectize Test',
-            content: content,
-            type: 'url',
-            maxheight: 400
-        });
-        return false;
-    });
-});
-function modalconfirmtestfunc(a, b, c) {
-    alert("Confirm True >> please view console");
-    console.log("Confirm True || Parametres 1 = " + a  +", 2 = " + b + ", 3 = " + c);
-}
-function openfunctest() {
-    alert("Confirm/Modal Open >> please view console");
-    console.log("Confirm/Modal Open Function");
-}
-function closefunctest(p1, p2) {
-    alert("Confirm/Modal Close >> please view console");
-    console.log("Confirm/Modal Close Function // Parametres 1 = " + p1 + ", 2 = " + p2);
 }
 
 $.fn.outerHTML = function () {
