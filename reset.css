@@ -1,0 +1,123 @@
+﻿:focus { outline: none; }
+:hover { outline: none; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; /*vertical-align: baseline;*/ background: transparent; }
+body { line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+nav ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; }
+a:after { -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; }
+ins { background-color: #ff9; color: #3f3f3f; text-decoration: none; }
+mark { background-color: #ff9; color: #3f3f3f; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+* { filter: none; list-style: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-decoration: none; outline: none; }
+.cke, .cke *, .cke_dialog, .cke_dialog * { -moz-box-sizing: initial; -webkit-box-sizing: initial; box-sizing: initial; }
+a, button { text-decoration: none; color: #3f3f3f; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; }
+html, body { min-height: 100% !important; min-width: 100% !important; padding: 0 !important; margin: 0 !important; font-family: 'Exo 2'; font-weight: normal; font-size: 14px; background-color: #e5e9ec; color: #3f3f3f; }
+b { font-weight: bolder; }
+li { list-style: none; }
+.posA { position: absolute !important; }
+.posR { position: relative !important; }
+.cb { display: block; width: 100%; }
+.cb,
+.afterClear:after { content: ""; display: block; clear: both; }
+.d_n { display: none !important; }
+.d_b { display: block !important; }
+.d_ib { display: inline-block !important; }
+.m0a { margin: 0 auto; }
+.f_l { float: left !important; }
+.f_r { float: right !important; }
+.f_n { float: none !important; }
+.f_ih { float: inherit !important; }
+.f_in { float: initial !important; }
+input:not([type="radio"]),
+input:not([type="checkbox"]),
+textarea { font-family: 'Exo 2'; max-width: 100%; font-weight: normal; color: #3f3f3f; font-size: 14px; padding: 4px; border: 0; border: 1px solid #e0e0e0; box-shadow: -2px 2px 0 #f2f2f2; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; }
+select { font-family: 'Exo 2'; max-width: 100%; font-weight: normal; color: #3f3f3f; font-size: 14px; padding: 4px; border: 0; border: 1px solid #e0e0e0; box-shadow: -2px 2px 0 #f2f2f2; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; }
+input:not([type="radio"]),
+input:not([type="checkbox"]),
+form textarea,
+form select { width: 100%; }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active { }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button,
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+input:focus { outline: 0; }
+input,
+textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] { }
+input[type=checkbox],
+input[type=radio] { width: 13px; height: 13px; }
+input[type=file] { }
+input[type=search] { -webkit-appearance: textfield; /*-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;*/ }
+::-webkit-search-decoration { display: none; }
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] { overflow: visible; width: auto; }
+::-webkit-file-upload-button { padding: 0; border: 0; background: none; }
+textarea { vertical-align: top; overflow: auto; }
+select[multiple] { vertical-align: top; }
+
+textarea:disabled, input:not([type]):disabled, input[type="color" i]:disabled, input[type="date" i]:disabled, input[type="datetime" i]:disabled, input[type="datetime-local" i]:disabled, input[type="email" i]:disabled, input[type="month" i]:disabled, input[type="password" i]:disabled, input[type="number" i]:disabled, input[type="search" i]:disabled, input[type="tel" i]:disabled, input[type="text" i]:disabled, input[type="time" i]:disabled, input[type="url" i]:disabled, input[type="week" i]:disabled { background-color: rgba(255,255,255,1); opacity: .5; }
+textarea:disabled:hover, input:not([type]):disabled:hover, input[type="color" i]:disabled:hover, input[type="date" i]:disabled:hover, input[type="datetime" i]:disabled:hover, input[type="datetime-local" i]:disabled:hover, input[type="email" i]:disabled:hover, input[type="month" i]:disabled:hover, input[type="password" i]:disabled:hover, input[type="number" i]:disabled:hover, input[type="search" i]:disabled:hover, input[type="tel" i]:disabled:hover, input[type="text" i]:disabled:hover, input[type="time" i]:disabled:hover, input[type="url" i]:disabled:hover, input[type="week" i]:disabled { background-color: rgba(255,255,255,.6); border: 1px solid #e0e0e0; }
+
+/*
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	
+	/* This works in IE 8 & 9 too */
+/* ... but also 5, 6, 7 
+	filter: alpha(opacity=50);	
+	/* Older than Firefox 0.9 
+	-moz-opacity:0.5;	
+	/* Safari 1.x (pre WebKit!) 
+	-khtml-opacity: 0.5;    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ 
+	opacity: 0.5;*/
+._p2 { padding: 2px; }
+._p4 { padding: 4px; }
+._p5 { padding: 5px; }
+._p6 { padding: 6px; }
+._p8 { padding: 8px; }
+._p10 { padding: 10px; }
