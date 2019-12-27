@@ -1,115 +1,115 @@
 /*#region Buttons Styles [Start] */
-.btn { display: inline-block; padding: 0; border: 0; background: none; }
-.btn .btn-ctn { opacity: 0.90; font-weight: bold; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; display: block; padding: 6px 10px; margin-bottom: 0; font-size: 14px; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; background-color: #fff; -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; border: 4px solid #fff; }
-.btn:hover .btn-ctn { -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); }
-.btn-l { float: left; }
-.btn-r { float: right; }
-.btn-ml-10 { margin-left: 10px; }
-.btn-mr-10 { margin-right: 10px; }
-.btn .btn-ctn span.icon i { font-size: 15px; }
-.btn .btn-ctn span.title { padding: 0 12px; }
-.btn .btn-ctn span.icon { padding-left: 12px; padding-right: 12px; }
-.btn .btn-ctn span.title + span.icon { padding-left: 0; padding-right: 12px; }
-.btn .btn-ctn span.icon.loader { padding-left: 12px; padding-right: 12px; }
-.btn .btn-ctn span.icon + span.title { padding-left: 0; }
-.btn.mini .btn-ctn { padding: 3px 0; }
-.btn.mini .btn-ctn span.icon i { font-size: 14px; }
-.btn.mini .btn-ctn span.title { padding: 0 8px; }
-.btn.mini .btn-ctn span.icon { padding-left: 8px; padding-right: 8px; }
-.btn.mini .btn-ctn span.title + span.icon { padding-right: 8px; }
-.btn.mini .btn-ctn span.icon.loader { padding-left: 8px; padding-right: 8px; }
-.btn.mini2x .btn-ctn { padding: 0; }
-.btn.mini2x .btn-ctn span.icon i { font-size: 13px; }
-.btn.mini2x .btn-ctn span.title { padding: 0 4px; }
-.btn.mini2x .btn-ctn span.icon { padding-left: 4px; padding-right: 4px; }
-.btn.mini2x .btn-ctn span.title + span.icon { padding-right: 4px; }
-.btn.mini2x .btn-ctn span.icon.loader { padding-left: 4px; padding-right: 4px; }
-.btn:hover .btn-ctn,
-.btn:focus .btn-ctn { opacity: 1; }
-.btn-primary .btn-ctn,
-.btn-success .btn-ctn,
-.btn-info .btn-ctn,
-.btn-warning .btn-ctn,
-.btn-danger .btn-ctn,
-.btn-inverse .btn-ctn,
-.btn-purple .btn-ctn,
-.btn-pink .btn-ctn { color: #FFFFFF !important; }
-.btn-default .btn-ctn,
-.btn-default:hover .btn-ctn,
-.btn-default:focus .btn-ctn,
-.btn-default:active .btn-ctn,
-.btn-default.active .btn-ctn,
-.btn-default.focus .btn-ctn { background-color: #fff; }
-.btn-primary .btn-ctn,
-.btn-primary:hover .btn-ctn,
-.btn-primary:focus .btn-ctn,
-.btn-primary:active .btn-ctn,
-.btn-primary.active .btn-ctn,
-.btn-primary.focus .btn-ctn { background-color: #1e88e5; }
-.btn-success .btn-ctn,
-.btn-success:hover .btn-ctn,
-.btn-success:focus .btn-ctn,
-.btn-success:active .btn-ctn,
-.btn-success.active .btn-ctn,
-.btn-success.focus .btn-ctn { background-color: #33b86c; }
-.btn-info .btn-ctn,
-.btn-info:hover .btn-ctn,
-.btn-info:focus .btn-ctn,
-.btn-info:active .btn-ctn,
-.btn-info.active .btn-ctn,
-.btn-info.focus .btn-ctn { background-color: #29b6f6;; }
-.btn-warning .btn-ctn,
-.btn-warning:hover .btn-ctn,
-.btn-warning:focus .btn-ctn,
-.btn-warning:active .btn-ctn,
-.btn-warning.active .btn-ctn,
-.btn-warning.focus .btn-ctn { background-color: #ffd740; color: #333 !important; }
-.btn-danger .btn-ctn,
-.btn-danger:active .btn-ctn,
-.btn-danger:focus .btn-ctn,
-.btn-danger:hover .btn-ctn,
-.btn-danger.active .btn-ctn,
-.btn-danger.focus .btn-ctn { background-color: #ef5350; }
-.btn-inverse .btn-ctn,
-.btn-inverse:hover .btn-ctn,
-.btn-inverse:focus .btn-ctn,
-.btn-inverse:active .btn-ctn,
-.btn-inverse.active .btn-ctn,
-.btn-inverse.focus .btn-ctn { background-color: #212121; color: #FFFFFF; }
-.btn-purple .btn-ctn,
-.btn-purple:hover .btn-ctn,
-.btn-purple:focus .btn-ctn,
-.btn-purple:active .btn-ctn,
-.btn-purple.active .btn-ctn,
-.btn-purple.focus .btn-ctn { background-color: #7e57c2; color: #FFFFFF; }
-.btn-pink .btn-ctn,
-.btn-pink:hover .btn-ctn,
-.btn-pink:focus .btn-ctn,
-.btn-pink:active .btn-ctn,
-.btn-pink.active .btn-ctn,
-.btn-pink.focus .btn-ctn { background-color: #ec407a; color: #FFFFFF; }
-.btn-mm .btn-ctn,
-.btn-mm:hover .btn-ctn,
-.btn-mm:focus .btn-ctn,
-.btn-mm:active .btn-ctn,
-.btn-mm.active .btn-ctn,
-.btn-mm.focus .btn-ctn { background-color: #e7bd8d; color: #4a4a4a; }
-.btn-mm2 .btn-ctn,
-.btn-mm2:hover .btn-ctn,
-.btn-mm2:focus .btn-ctn,
-.btn-mm2:active .btn-ctn,
-.btn-mm2.active .btn-ctn,
-.btn-mm2.focus .btn-ctn { background-color: #ef7d16; color: #FFFFFF; }
-.btn-mm3 .btn-ctn,
-.btn-mm3:hover .btn-ctn,
-.btn-mm3:focus .btn-ctn,
-.btn-mm3:active .btn-ctn,
-.btn-mm3.active .btn-ctn,
-.btn-mm3.focus .btn-ctn { background-color: #fff; color: #FFFFFF; border-color: #00427a; }
-.btn-white .btn-ctn,
-.btn-white:hover .btn-ctn,
-.btn-white:focus .btn-ctn,
-.btn-white:active .btn-ctn,
-.btn-white.active .btn-ctn,
-.btn-white.focus .btn-ctn { background-color: #fff; color: #464646; border-color: #dfb585; }
+.osmbtn { display: inline-block; padding: 0; border: 0; background: none; }
+.osmbtn .osmbtn-ctn { opacity: 0.90; font-weight: bold; -webkit-transition: All 380ms ease; -moz-transition: All 380ms ease; -o-transition: All 380ms ease; transition: All 380ms ease; display: block; padding: 6px 10px; margin-bottom: 0; font-size: 14px; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; background-color: #fff; -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; border: 4px solid #fff; }
+.osmbtn:hover .osmbtn-ctn { -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3); }
+.osmbtn-l { float: left; }
+.osmbtn-r { float: right; }
+.osmbtn-ml-10 { margin-left: 10px; }
+.osmbtn-mr-10 { margin-right: 10px; }
+.osmbtn .osmbtn-ctn span.icon i { font-size: 15px; }
+.osmbtn .osmbtn-ctn span.title { padding: 0 12px; }
+.osmbtn .osmbtn-ctn span.icon { padding-left: 12px; padding-right: 12px; }
+.osmbtn .osmbtn-ctn span.title + span.icon { padding-left: 0; padding-right: 12px; }
+.osmbtn .osmbtn-ctn span.icon.loader { padding-left: 12px; padding-right: 12px; }
+.osmbtn .osmbtn-ctn span.icon + span.title { padding-left: 0; }
+.osmbtn.mini .osmbtn-ctn { padding: 3px 0; }
+.osmbtn.mini .osmbtn-ctn span.icon i { font-size: 14px; }
+.osmbtn.mini .osmbtn-ctn span.title { padding: 0 8px; }
+.osmbtn.mini .osmbtn-ctn span.icon { padding-left: 8px; padding-right: 8px; }
+.osmbtn.mini .osmbtn-ctn span.title + span.icon { padding-right: 8px; }
+.osmbtn.mini .osmbtn-ctn span.icon.loader { padding-left: 8px; padding-right: 8px; }
+.osmbtn.mini2x .osmbtn-ctn { padding: 0; }
+.osmbtn.mini2x .osmbtn-ctn span.icon i { font-size: 13px; }
+.osmbtn.mini2x .osmbtn-ctn span.title { padding: 0 4px; }
+.osmbtn.mini2x .osmbtn-ctn span.icon { padding-left: 4px; padding-right: 4px; }
+.osmbtn.mini2x .osmbtn-ctn span.title + span.icon { padding-right: 4px; }
+.osmbtn.mini2x .osmbtn-ctn span.icon.loader { padding-left: 4px; padding-right: 4px; }
+.osmbtn:hover .osmbtn-ctn,
+.osmbtn:focus .osmbtn-ctn { opacity: 1; }
+.osmbtn-primary .osmbtn-ctn,
+.osmbtn-success .osmbtn-ctn,
+.osmbtn-info .osmbtn-ctn,
+.osmbtn-warning .osmbtn-ctn,
+.osmbtn-danger .osmbtn-ctn,
+.osmbtn-inverse .osmbtn-ctn,
+.osmbtn-purple .osmbtn-ctn,
+.osmbtn-pink .osmbtn-ctn { color: #FFFFFF !important; }
+.osmbtn-default .osmbtn-ctn,
+.osmbtn-default:hover .osmbtn-ctn,
+.osmbtn-default:focus .osmbtn-ctn,
+.osmbtn-default:active .osmbtn-ctn,
+.osmbtn-default.active .osmbtn-ctn,
+.osmbtn-default.focus .osmbtn-ctn { background-color: #fff; }
+.osmbtn-primary .osmbtn-ctn,
+.osmbtn-primary:hover .osmbtn-ctn,
+.osmbtn-primary:focus .osmbtn-ctn,
+.osmbtn-primary:active .osmbtn-ctn,
+.osmbtn-primary.active .osmbtn-ctn,
+.osmbtn-primary.focus .osmbtn-ctn { background-color: #1e88e5; }
+.osmbtn-success .osmbtn-ctn,
+.osmbtn-success:hover .osmbtn-ctn,
+.osmbtn-success:focus .osmbtn-ctn,
+.osmbtn-success:active .osmbtn-ctn,
+.osmbtn-success.active .osmbtn-ctn,
+.osmbtn-success.focus .osmbtn-ctn { background-color: #33b86c; }
+.osmbtn-info .osmbtn-ctn,
+.osmbtn-info:hover .osmbtn-ctn,
+.osmbtn-info:focus .osmbtn-ctn,
+.osmbtn-info:active .osmbtn-ctn,
+.osmbtn-info.active .osmbtn-ctn,
+.osmbtn-info.focus .osmbtn-ctn { background-color: #29b6f6;; }
+.osmbtn-warning .osmbtn-ctn,
+.osmbtn-warning:hover .osmbtn-ctn,
+.osmbtn-warning:focus .osmbtn-ctn,
+.osmbtn-warning:active .osmbtn-ctn,
+.osmbtn-warning.active .osmbtn-ctn,
+.osmbtn-warning.focus .osmbtn-ctn { background-color: #ffd740; color: #333 !important; }
+.osmbtn-danger .osmbtn-ctn,
+.osmbtn-danger:active .osmbtn-ctn,
+.osmbtn-danger:focus .osmbtn-ctn,
+.osmbtn-danger:hover .osmbtn-ctn,
+.osmbtn-danger.active .osmbtn-ctn,
+.osmbtn-danger.focus .osmbtn-ctn { background-color: #ef5350; }
+.osmbtn-inverse .osmbtn-ctn,
+.osmbtn-inverse:hover .osmbtn-ctn,
+.osmbtn-inverse:focus .osmbtn-ctn,
+.osmbtn-inverse:active .osmbtn-ctn,
+.osmbtn-inverse.active .osmbtn-ctn,
+.osmbtn-inverse.focus .osmbtn-ctn { background-color: #212121; color: #FFFFFF; }
+.osmbtn-purple .osmbtn-ctn,
+.osmbtn-purple:hover .osmbtn-ctn,
+.osmbtn-purple:focus .osmbtn-ctn,
+.osmbtn-purple:active .osmbtn-ctn,
+.osmbtn-purple.active .osmbtn-ctn,
+.osmbtn-purple.focus .osmbtn-ctn { background-color: #7e57c2; color: #FFFFFF; }
+.osmbtn-pink .osmbtn-ctn,
+.osmbtn-pink:hover .osmbtn-ctn,
+.osmbtn-pink:focus .osmbtn-ctn,
+.osmbtn-pink:active .osmbtn-ctn,
+.osmbtn-pink.active .osmbtn-ctn,
+.osmbtn-pink.focus .osmbtn-ctn { background-color: #ec407a; color: #FFFFFF; }
+.osmbtn-mm .osmbtn-ctn,
+.osmbtn-mm:hover .osmbtn-ctn,
+.osmbtn-mm:focus .osmbtn-ctn,
+.osmbtn-mm:active .osmbtn-ctn,
+.osmbtn-mm.active .osmbtn-ctn,
+.osmbtn-mm.focus .osmbtn-ctn { background-color: #e7bd8d; color: #4a4a4a; }
+.osmbtn-mm2 .osmbtn-ctn,
+.osmbtn-mm2:hover .osmbtn-ctn,
+.osmbtn-mm2:focus .osmbtn-ctn,
+.osmbtn-mm2:active .osmbtn-ctn,
+.osmbtn-mm2.active .osmbtn-ctn,
+.osmbtn-mm2.focus .osmbtn-ctn { background-color: #ef7d16; color: #FFFFFF; }
+.osmbtn-mm3 .osmbtn-ctn,
+.osmbtn-mm3:hover .osmbtn-ctn,
+.osmbtn-mm3:focus .osmbtn-ctn,
+.osmbtn-mm3:active .osmbtn-ctn,
+.osmbtn-mm3.active .osmbtn-ctn,
+.osmbtn-mm3.focus .osmbtn-ctn { background-color: #fff; color: #FFFFFF; border-color: #00427a; }
+.osmbtn-white .osmbtn-ctn,
+.osmbtn-white:hover .osmbtn-ctn,
+.osmbtn-white:focus .osmbtn-ctn,
+.osmbtn-white:active .osmbtn-ctn,
+.osmbtn-white.active .osmbtn-ctn,
+.osmbtn-white.focus .osmbtn-ctn { background-color: #fff; color: #464646; border-color: #dfb585; }
 /*#endregion Buttons Styles [Finish] */
