@@ -1,12 +1,13 @@
-////////////////////////////////////////////////
-/////######################################/////
-////##   osModal v.1.2                    ##////
-///###    07 Feb ‎2016 Sunday, 06:06:06   ###///
-//####     Generator : Oğuzhan SARI       ####//
-///###      Agency : fikirfokur DSA       ###///
-////##        Project : Vandalina         ##////
-/////######################################/////
-////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////######################################//////
+////##       osModal v1.3                  ##////
+///###       07 Feb ‎2016 Sunday, 06:06:06  ###///
+///###v.1.3  27 Dec ‎2016 Friday, 07:50:00  ###///
+//####       Generator : Oğuzhan SARI      ####//
+///###       Agency : fikirfokur DSA       ###///
+////##       Project : Vandalina           ##////
+/////######################################//////
+/////////////////////////////////////////////////
 
 (function (a) {
     (jQuery.browser = jQuery.browser || {}).mobile = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))
@@ -21,9 +22,9 @@
                 var t = osm;
                 var o = t.exts;
                 var osmid = o.id;
-                var osmokbutton = '<a href="#" class="osm-okbutton btn btn-primary"><span class="btn-ctn"><span class="title">' + o.okbuttontext + '</span></span></a>';
-                var osmyes = '<a href="#" class="osm-yes btn btn-danger"><span class="btn-ctn"><span class="title">' + o.yestext + '</span></span></a>';
-                var osmno = '<a href="#" class="osm-no btn btn-success"><span class="btn-ctn"><span class="title">' + o.notext + '</span></span></a>';
+                var osmokbutton = '<a href="#" class="osm-okbutton osmbtn osmbtn-primary"><span class="osmbtn-ctn"><span class="title">' + o.okbuttontext + '</span></span></a>';
+                var osmyes = '<a href="#" class="osm-yes osmbtn osmbtn-danger"><span class="osmbtn-ctn"><span class="title">' + o.yestext + '</span></span></a>';
+                var osmno = '<a href="#" class="osm-no osmbtn osmbtn-success"><span class="osmbtn-ctn"><span class="title">' + o.notext + '</span></span></a>';
                 var osmbuttons = "";
                 var osmbuttonsleft = "";
                 var osmbuttonsright = "";
@@ -69,33 +70,33 @@
                     osmwidth = "width: 100%;";
                 }
                 var osmelements = '' +
-                '<div class="osModal  {0}" style="{1} position: ' + o.position + '" id="{2}">' +
-                '<div class="osm-backclose"></div>' +
-                '<div class="osm-box">' +
-                '<div class="osm-container" style="' + osmwidth + osmmaxwidth + '">' +
-                '<div class="osm-content">' +
-                '<div class="osm-header">' +
-                '<div class="osm-h-left">' +
-                '<i class="osm-h-icon {3}"></i>' +
-                '<span class="osm-h-title">{4}</span>' +
-                '</div>' +
-                '<div class="osm-h-right">' +
-                '<div class="osm-h-closed">' +
-                '{5}' +
-                '</div>' +
-                '</div>' +
-                '</div>' +
-                '<div class="osm-article">' +
-                '<div class="osm-article-container">' +
-                '<div class="osm-article-container-scrolling"><div class="osm-load"></div></div>' +
-                '</div>' +
-                '{6}' +
-                '</div>' +
-                '</div>' +
-                '</div>' +
-                '</div>' +
-                '</div>';
-                $(o.openedarea).append(osStringFormat(osmelements, [osmaddclass, osmaddstyle, osmid, o.icon, osmhtitle, oscheaderclose, osmbuttons]));
+                    '<div class="osModal  {0} ' + o.theme + '" style="{1} position: ' + o.position + '" id="{2}">' +
+                    '<div class="osm-backclose"></div>' +
+                    '<div class="osm-box">' +
+                    '<div class="osm-container" style="' + osmwidth + osmmaxwidth + '">' +
+                    '<div class="osm-content">' +
+                    '<div class="osm-header">' +
+                    '<div class="osm-h-left">' +
+                    (!o.icon ? '' : '<i class="osm-h-icon {3}"></i>') +
+                    '<span class="osm-h-title">{4}</span>' +
+                    '</div>' +
+                    '<div class="osm-h-right">' +
+                    '<div class="osm-h-closed">' +
+                    '{5}' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="osm-article">' +
+                    '<div class="osm-article-container">' +
+                    '<div class="osm-article-container-scrolling"><div class="osm-load"></div></div>' +
+                    '</div>' +
+                    '{6}' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                $(o.openedarea).append(osStringFormat(osmelements, [osmaddclass, osmaddstyle, osmid, !o.icon ? '' : o.icon, osmhtitle, oscheaderclose, osmbuttons]));
                 var modal = $('#' + osmid);
                 var box = $('.osm-box', modal);
                 var container = $('.osm-container', modal);
@@ -125,12 +126,15 @@
                         articleload.load(osmcontent);
                     }
                 } else if (o.type == "html") {
-                    var htmldiv = $('#' + osmcontent).clone().css({ "display": "block" });
+                    var htmldiv = $('#' + osmcontent).clone().css({ "display": "block" }).removeClass("d-none");
                     articleload.html(htmldiv.osOuterHTML());
                 } else {
                     articleload.append(osmcontent);
                 }
-                if (o.maxheight != null) { t.heightconf(); $(window).resize(function () { t.heightconf(); }); }
+                if (o.maxheight != null) {
+                    t.heightconf();
+                    $(window).resize(function () { t.heightconf(); });
+                }
                 hcbutton.click(function () { t.close(); return false; });
                 if (o.backclose) { backclose.click(function () { t.close(); return false; }); }
                 if (o.autoclose) { setTimeout(function () { t.close(); }, o.autotime); }
@@ -140,11 +144,29 @@
                 if ((Array.isArray(o.addbuttonleft) && o.addbuttonleft.constructor === Array && o.addbuttonleft) || (Array.isArray(o.addbuttonright) && o.addbuttonright.constructor === Array && o.addbuttonright)) { $('[data-osm-function]').click(function () { var t = $(this); var fnc = t.data("osm-function"); var prs = t.data("osm-function-parameters"); t.runFunction(fnc, prs); }); }
                 if (Array.isArray(o.openfunc) && o.openfunc.constructor === Array && o.openfunc) { t.runFunction(o.openfunc[0], o.openfunc[1]); }
                 if (o.bodyoverflow) { $('body').addClass('osModalOverflowBody'); }
-                setTimeout(function () {
-                    if (articlectnscroll.height() > 490) {
-                        articlectnscroll.mCustomScrollbar({ theme: "minimal-dark", set_height: "100%" });
+
+                if (o.mCustomScrollbar) {
+                    var mcsOpt = {
+                        theme: "minimal-dark",
+                        mouseWheel: {
+                            enable: true,
+                            disableOver: ['.selectize-control', '.selectize-control *'],
+                            disableOverIsCheckElement: true
+                        }
                     }
-                }, 100);
+                    setTimeout(function () {
+                        articlectnscroll.mCustomScrollbar(mcsOpt);
+                    }, 100);
+                    var resizeTimer;
+                    $(window).on('resize', function (e) {
+                        clearTimeout(resizeTimer);
+                        resizeTimer = setTimeout(function () {
+                            articlectnscroll.mCustomScrollbar("destroy");
+                            articlectnscroll.mCustomScrollbar(mcsOpt);
+                        }, 250);
+                    });
+                }
+
                 $.data(modal[0], "osModalData", osm);
                 return true;
             }
@@ -168,18 +190,22 @@
             var o = osm.exts;
             var osmid = o.id;
             var modal = $('#' + osmid);
-            var header = $('.osm-h-header', modal);
-            var article = $('.osm-article', modal);
-            var articlectn = $('.osm-article-container', modal);
-            var articlebuttons = $('.osm-article-buttons', modal);
+            var osmbox = $('.osm-box', modal);
             var maxheight = o.maxheight;
-            var hheight = header.outerHeight(true);
-            var abheight = articlebuttons.outerHeight(true);
-            var outheight = hheight + abheight;
             newheight = maxheight;
-            if (maxheight.toString().indexOf("px") == -1 & maxheight.toString().indexOf("%") == -1) { if (maxheight <= 100) { var wh = $(window).outerHeight(true); newheight = (wh / 100) * maxheight; } }
-            articlectn.css({ "height": newheight + "px" });
-            //articlectn.css({ "max-height": newheight + "px" });
+            if (maxheight.toString().indexOf("px") == -1 & maxheight.toString().indexOf("%") == -1 & maxheight != 'auto') {
+                var wh = $(window).outerHeight(true);
+                if (maxheight <= 100) {
+                    newheight = (wh / 100) * maxheight;
+                } else if (wh < newheight) {
+                    newheight = wh;
+                } else {
+                    newheight = o.maxheight;
+                }
+            } else if (maxheight == 'auto') {
+                newheight = modal.height() - 100;
+            }
+            osmbox.css({ "max-height": newheight + "px" });
             return true;
         }
         osm.runFunction = function (functionname, parametres) {
@@ -227,16 +253,18 @@
         addbuttonleft: null, // array ( a include -----> data-osm-function=\"testfunc\" data-osm-function-parameters='[\"asd\",123]' <----- go function call )
         width: 100, // px, % or int (initial of false)
         maxwidth: 800, // px, % or int max width (initial of false)
-        maxheight: null, // px, % or int (Scrolling supported by mcustomscrollbar)
+        maxheight: "100%", // px, % or int (Scrolling supported by mcustomscrollbar)
         position: "fixed", // absolute or fixed
-        backclose: true, // true or false
+        backclose: false, // true or false
         mobile: true, // true, false or null mobile  (button display on mobile [ true = Show compulsory, false = mandatory Hide, null = closebutton default setting ])
         closebutton: true, // true, false or null
-        icon: 'icon-window-maximize',
+        icon: false, //'icon-window-maximize',
         animatecss: null, // animate.css supported by animatecss (https://daneden.hub.io/gitanimate.css/)
         bodyoverflow: true,
-        responsive: false,
-        closeicon: 'X'
+        responsive: true,
+        closeicon: '<i class="fal fa-times"></i>',
+        theme: '',
+        mCustomScrollbar: true
     }
     $.fn.osModal = function (options, opt) {
         if (typeof options === "object") {
@@ -257,32 +285,6 @@
             }
         }
     }
-    //$.fn.osModal = function (options, opt) {
-    //    if (typeof options === "object") {
-    //        if (options === undefined) { options = {}; }
-    //        return this.each(function () {
-    //            if (options.id == undefined) {
-    //                options = $.extend({}, options, { id: osCodeGenerator(30) });
-    //            }
-    //            if (options.openedarea == undefined) {
-    //                options = $.extend({}, options, { openedarea: 'body' });
-    //            }
-    //            $(options.openedarea).append('<div class="osModal" id="' + options.id + '">');
-    //            var $this = $('#' + options.id);
-    //            if ($this.data('osModalData') === undefined) {
-    //                new $.osModal($this, options);
-    //            }
-    //        });
-    //    } else {
-    //        var ex = $('#' + $(this).attr("id"));
-    //        var $osModal = $(this).data('osModalData');
-    //        switch (options) {
-    //            case "destroy": $osModal.destroy(); break;
-    //            case "close": $osModal.close(); break;
-    //            default: $osModal.destroy();
-    //        }
-    //    }
-    //}
 })(jQuery);
 function osModalClose(id) {
     $('#' + id).osModal("close");
@@ -303,26 +305,26 @@ $(function () {
             content: '/modaltest.html',
             type: 'url',
             addbuttonleft: [
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-comment-text-outline\"></i></span><span class=\"title\">Yorumları Oku</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-primary\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-eye\"></i></span><span class=\"title\">Ayrıntılı İncele</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-default\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-comment-text-outline\"></i></span><span class=\"title\">Yorumları Oku</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-primary\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-eye\"></i></span><span class=\"title\">Ayrıntılı İncele</span></span></a>",
             ],
             addbuttonright: [
                 "<div class=\"amount\"></div>",
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-default\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-success\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
             ],
             //openfunc: ["amountcreator", [80, 10, 20, 10]], //amountcreator fonksiyonu vdCounter içerisinde yer alıyor.
         });
         return false;
-    }); 
+    });
     $('.modalcategorytree').click(function () {
         $(this).osModal({
             title: 'Kategori Ağacı',
             content: '/modalcategorytree.html',
             type: 'url',
             addbuttonright: [
-                "<a href=\"/\" class=\"btn btn-default\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
-                "<a href=\"/\" class=\"btn btn-success\"><span class=\"btn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-default\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-close\"></i></span><span class=\"title\">İptal</span></span></a>",
+                "<a href=\"/\" class=\"osmbtn osmbtn-success\"><span class=\"osmbtn-ctn\"><span class=\"icon\"><i class=\"icon-content-save\"></i></span><span class=\"title\">Kaydet</span></span></a>",
             ],
             width: "500px",
             maxwidth: false,
@@ -375,11 +377,11 @@ function closefunctest(p1, p2) {
 $.fn.osOuterHTML = function () {
     // IE, Chrome & Safari will comply with the non-standard osOuterHTML, all others (FF) will have a fall-back for cloning
     return (!this.length) ? this : (this[0].osOuterHTML || (
-      function (el) {
-          var div = document.createElement('div');
-          div.appendChild(el.cloneNode(true));
-          var contents = div.innerHTML;
-          div = null;
-          return contents;
-      })(this[0]));
+        function (el) {
+            var div = document.createElement('div');
+            div.appendChild(el.cloneNode(true));
+            var contents = div.innerHTML;
+            div = null;
+            return contents;
+        })(this[0]));
 }
