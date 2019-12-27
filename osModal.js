@@ -2,7 +2,7 @@
 /////######################################//////
 ////##       osModal v1.3                  ##////
 ///###       07 Feb 2016 Sunday, 06:06:06  ###///
-///###v.1.3  27 Dec 2017 Friday, 07:50:00  ###///
+///###v.1.3  27 Dec 2019 Friday, 07:50:00  ###///
 //####       Generator : Oğuzhan SARI      ####//
 ///###       Agency : fikirfokur DSA       ###///
 ////##       Project : Vandalina           ##////
